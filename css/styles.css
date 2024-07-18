@@ -696,24 +696,22 @@ img {
   border: none;
   fill: #ffffff;
 }
-.close-btn :focus {
+.close-btn:focus {
   background-color: #404bbf;
   border: none;
   fill: #ffffff;
 }
 
-.modal-close-btn:hover,
-.modal-close-btn-button:focus {
-  background-color: #404bbf;
-  border: none;
-}
+/* ...........................................
+............................................
+.......................................... */
 
 .close-icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close-btn:hover > .modal-close-icon,
-.modal-close-btn:focus > .modal-close-icon {
+.close-icon:focus,
+.close-icon:hover {
   fill: #ffffff;
 }
 
@@ -854,11 +852,7 @@ img {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.check:checked + .privacy-label > .checkbox-span {
-  background-color: #404bbf;
-  fill: #f4f4fd;
-  border: none;
-}
+/* ................... */
 
 .checkbox-span:hover {
   background-color: #404bbf;
