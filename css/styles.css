@@ -695,6 +695,7 @@ img {
 .modal-close-btn-button:focus {
   background-color: #404bbf;
   border: none;
+  fill: #ffffff;
 }
 /* llllllllll */
 .close-icon {
@@ -819,9 +820,7 @@ img {
   line-height: 1.33333;
   text-decoration: underline;
   text-decoration-skip-ink: none;
-  fill: #f4f4fd;
-  background-color: #404bbf;
-  border: none;
+  color: #4d5ae5;
 }
 
 /* fill: #f4f4fd;
@@ -852,7 +851,7 @@ img {
 .check-icon {
   fill: #f4f4fd;
 }
-.check:checked + .privacy-label > .checkbox-span {
+.check:checked + .privacy-label + .checkbox-span {
   background-color: #404bbf;
   fill: #f4f4fd;
   border: none;
