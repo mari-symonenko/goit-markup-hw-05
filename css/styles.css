@@ -667,6 +667,12 @@ img {
   border-radius: 4px;
 }
 
+.button {
+  background-color: #404bbf;
+  border: none;
+  background-color: #404bbf;
+}
+
 .close-btn {
   position: absolute;
   top: 24px;
@@ -686,11 +692,11 @@ img {
 }
 
 .modal-close-btn:hover,
-.modal-close-btn:focus {
+.modal-close-btn-button:focus {
   background-color: #404bbf;
   border: none;
 }
-
+/* llllllllll */
 .close-icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -813,13 +819,20 @@ img {
   line-height: 1.33333;
   text-decoration: underline;
   text-decoration-skip-ink: none;
-  color: #4d5ae5;
+  fill: #f4f4fd;
+  background-color: #404bbf;
+  border: none;
 }
+
+/* fill: #f4f4fd;
+  background-color: #404bbf;
+  border: none; */
 
 .check:hover {
   border-radius: 2px;
   fill: #404bbf;
   border: 1px solid #404bbf;
+  border: none;
 }
 .checkbox-span {
   width: 16px;
