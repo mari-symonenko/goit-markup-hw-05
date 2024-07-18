@@ -691,13 +691,23 @@ img {
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close-btn:hover,
-.modal-close-btn-button:focus {
+.close-btn:hover {
   background-color: #404bbf;
   border: none;
   fill: #ffffff;
 }
-/* llllllllll */
+.close-btn :focus {
+  background-color: #404bbf;
+  border: none;
+  fill: #ffffff;
+}
+
+.modal-close-btn:hover,
+.modal-close-btn-button:focus {
+  background-color: #404bbf;
+  border: none;
+}
+
 .close-icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -844,13 +854,6 @@ img {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.check-icon:focus {
-  fill: #f4f4fd;
-}
-
-.check-icon:hover {
-  fill: #f4f4fd;
-}
 .check:checked + .privacy-label > .checkbox-span {
   background-color: #404bbf;
   fill: #f4f4fd;
@@ -889,5 +892,4 @@ img {
 .submit:hover,
 .submit:focus {
   background-color: #404bbf;
-  fill: #ffffff;
 }
