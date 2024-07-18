@@ -823,10 +823,6 @@ img {
   color: #4d5ae5;
 }
 
-/* fill: #f4f4fd;
-  background-color: #404bbf;
-  border: none; */
-
 .check:hover {
   border-radius: 2px;
   fill: #404bbf;
@@ -893,4 +889,5 @@ img {
 .submit:hover,
 .submit:focus {
   background-color: #404bbf;
+  fill: #ffffff;
 }
