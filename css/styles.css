@@ -452,13 +452,13 @@ img {
 }
 
 .socialmedia {
-  width: 208px;
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.02em;
   color: #ffffff;
   margin-bottom: 16px;
+  margin-left: auto;
 }
 
 .socialmedia-list {
@@ -571,9 +571,7 @@ img {
 /* ..... */
 
 .subscribe-container {
-  width: 453px;
-  height: 80px;
-  margin-left: 80px;
+  margin-left: auto;
 }
 
 .subscribe-text {
@@ -582,7 +580,6 @@ img {
   line-height: 150%;
   letter-spacing: 0.02em;
   color: #ffffff;
-  margin-bottom: 16px;
 }
 
 .subscribe-form {
@@ -603,10 +600,6 @@ img {
   padding-left: 16px;
   color: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-
-::placeholder {
-  color: #ffffff;
 }
 
 .button-subscibe {
@@ -630,6 +623,15 @@ img {
   border-radius: 4px;
 }
 
+.button-subscibe::placeholder {
+  color: #8e8f99;
+}
+
+.button-subscibe:hover,
+.button-subscibe:focus {
+  background-color: #31d0aa;
+}
+
 .icon-telegram {
   margin-left: 16px;
   fill: #ffffff;
@@ -643,14 +645,19 @@ img {
   width: 100%;
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
-  opacity: 0;
+  opacity: 1;
   visibility: hidden;
   position: none;
+  pointer-events: auto;
+  visibility: visible;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  opacity: 1;
-  visibility: visible;
+}
+
+.is-open {
+  opacity: 0;
   pointer-events: auto;
+  visibility: visible;
 }
 .modal {
   position: absolute;
@@ -702,13 +709,8 @@ img {
   fill: #ffffff;
 }
 
-/* ...........................................
-............................................
-.......................................... */
-
 .close-icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  fill: #ffffff;
 }
 
 .close-icon:focus,
@@ -765,6 +767,7 @@ img {
 }
 
 .icon-modal {
+  fill: #2e2f42;
   position: absolute;
   left: 16px;
   top: 50%;
@@ -853,9 +856,7 @@ img {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* aaaaaaaaaaaaaaaaa */
-
-.checkbox-span:hover {
+.check:checked + .privacy-mark > .checkbox-span {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
